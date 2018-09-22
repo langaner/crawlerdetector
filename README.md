@@ -4,13 +4,13 @@ Crawler Detector is a Golang package for detecting bots/crawlers/spiders via the
 
 ### Installation
 
-Run `go run github.com/langaner/crawlerdetector`.
+Run `go get github.com/langaner/crawlerdetector`.
 
 ### Usage
 
 ```
 detector := crawlerdetector.New()
-isCrawler := detector.isCrawler(r.Header.Get("User-Agent"))
+isCrawler := detector.IsCrawler(r.Header.Get("User-Agent"))
 
 if isCrawler {
     // Do something
